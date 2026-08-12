@@ -4244,71 +4244,8 @@
 
         @media (max-width:700px) {
 
-            .cover-intro {
-                top: 13%;
-            }
-
-            .cover-intro .mini {
-                font-size: 17px;
-            }
-
-            .cover-intro h1 {
-                font-size: 49px;
-            }
-
-            .envelope-stage {
-
-                width: 92vw;
-
-                height: 330px;
-
-                min-height: 0;
-
-                top: 59%;
-            }
-
-            .letter-card {
-                width: 80%;
-                left: 10%;
-            }
-
-            .seal {
-
-                width: 116px;
-                height: 116px;
-            }
-
-            .seal-design {
-
-                width: 76px;
-                height: 76px;
-            }
-
-            .seal-design svg {
-
-                width: 52px;
-                height: 52px;
-            }
-
-            .open-label {
-
-                bottom: -68px;
-
-                font-size: 16px;
-            }
-
-            .orb-1 {
-
-                width: 58px;
-                height: 58px;
-
-                top: 5%;
-                right: 7%;
-            }
-
-            .orb-2 {
-                left: 7%;
-            }
+            /* Cover / envelope mobile rules are defined in the
+               FINAL MOBILE FIX section at the end of this file. */
 
             .main-card {
 
@@ -9536,4 +9473,119 @@
         opacity: .7;
     }
 
+}
+
+/* =========================================================
+   IPHONE / SMALL MOBILE
+========================================================= */
+
+@media (max-width: 390px) {
+
+    .cover-intro {
+
+        top:
+            clamp(
+                65px,
+                9.5svh,
+                90px
+            );
+    }
+
+
+    .cover-intro .mini {
+
+        font-size: 14px;
+    }
+
+
+    .cover-intro h1 {
+
+        font-size: 48px;
+    }
+
+
+    .envelope-stage {
+
+        width: 92vw;
+
+        bottom:
+            clamp(
+                100px,
+                12svh,
+                125px
+            );
+
+        height: auto;
+
+        aspect-ratio:
+            1.58 / 1;
+    }
+
+
+    .seal {
+
+        width: 94px;
+        height: 94px;
+    }
+
+
+    .seal-wrap {
+
+        top: 52%;
+    }
+
+
+    .open-label {
+
+        bottom: -55px;
+
+        font-size: 14px;
+    }
+
+
+    .open-label span {
+
+        font-size: 7px;
+    }
+
+}
+
+/* =========================================================
+   MOBILE OPENING / EXTRACTION FIX
+   Keeps the 3D opening animation aligned with the bottom-
+   positioned responsive envelope.
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .cover.opening .letter-card {
+        transform:
+            translateZ(120px)
+            translateY(-72%)
+            rotateX(-2deg)
+            scale(1.02);
+
+        box-shadow:
+            0 38px 65px
+            rgba(20,0,8,.36);
+    }
+
+    .cover.extracting .letter-card {
+        transform:
+            translateZ(350px)
+            translateY(-90%)
+            scale(1.22);
+
+        opacity: 0;
+    }
+
+    .cover.extracting .envelope-stage {
+        transform:
+            translateX(-50%)
+            translateY(90px)
+            rotateX(22deg)
+            scale(.72);
+
+        opacity: .35;
+    }
 }
