@@ -114,6 +114,8 @@
         }
 
 
+
+
         /* ===================================================
            AMBIENT LIGHT
         =================================================== */
@@ -8987,6 +8989,551 @@
 
         font-size: 18px;
 
+    }
+
+}
+
+
+/* =========================================================
+   FINAL MOBILE FIX — COVER / ENVELOPE
+   PUT THIS AT THE VERY END OF styles.css
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =========================================
+       FULL MOBILE COVER
+    ========================================= */
+
+    .cover {
+        position: fixed;
+
+        inset: 0;
+
+        width: 100%;
+
+        height: 100vh;
+        height: 100svh;
+        height: 100dvh;
+
+        min-height: 100svh;
+
+        overflow: hidden;
+
+        display: block;
+
+        perspective: 1200px;
+
+        background:
+            radial-gradient(
+                circle at 50% 5%,
+                #a34260 0%,
+                #771d39 34%,
+                #4b0d22 70%,
+                #290610 100%
+            );
+    }
+
+
+    /* =========================================
+       INTRO
+    ========================================= */
+
+    .cover-intro {
+
+        position: absolute;
+
+        top: clamp(
+            70px,
+            11svh,
+            115px
+        );
+
+        left: 50%;
+
+        width: 90%;
+
+        transform:
+            translateX(-50%);
+
+        z-index: 50;
+
+        text-align: center;
+    }
+
+
+    .cover-intro .mini {
+
+        margin-bottom: 8px;
+
+        font-size:
+            clamp(
+                15px,
+                4vw,
+                18px
+            );
+
+        line-height: 1.6;
+
+        color:
+            rgba(255,246,238,.78);
+    }
+
+
+    .cover-intro h1 {
+
+        font-size:
+            clamp(
+                46px,
+                13vw,
+                62px
+            );
+
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+
+    .cover-intro .amp {
+
+        margin:
+            0 8px;
+
+        font-size: .65em;
+    }
+
+
+
+    /* =================================================
+       ENVELOPE POSITION
+    ================================================= */
+
+    .envelope-stage {
+
+        position: absolute;
+
+        left: 50%;
+
+        /*
+           IMPORTANT:
+           don't use top:58% on phones
+        */
+
+        top: auto;
+
+        bottom:
+            clamp(
+                105px,
+                13svh,
+                145px
+            );
+
+
+        width:
+            min(
+                91vw,
+                430px
+            );
+
+
+        /*
+           KEEP REAL ENVELOPE RATIO
+        */
+
+        height: auto;
+
+        aspect-ratio:
+            1.58 / 1;
+
+
+        min-height: 0;
+
+        max-height: none;
+
+
+        transform:
+
+            translateX(-50%)
+
+            rotateX(2deg);
+
+
+        transform-origin:
+            center center;
+
+
+        perspective:
+            1300px;
+
+
+        transform-style:
+            preserve-3d;
+
+
+        animation:
+            mobileEnvelopeFloat
+            5s ease-in-out infinite;
+    }
+
+
+
+    /* =========================================
+       MOBILE FLOAT
+    ========================================= */
+
+    @keyframes mobileEnvelopeFloat {
+
+        0%,
+        100% {
+
+            transform:
+
+                translateX(-50%)
+
+                translateY(0)
+
+                rotateX(2deg);
+        }
+
+
+        50% {
+
+            transform:
+
+                translateX(-50%)
+
+                translateY(-7px)
+
+                rotateX(3deg);
+        }
+    }
+
+
+
+    /* =========================================
+       SHADOW
+    ========================================= */
+
+    .envelope-shadow {
+
+        width: 82%;
+
+        height: 35px;
+
+        left: 9%;
+
+        bottom: -22px;
+
+        filter:
+            blur(18px);
+
+        opacity: .6;
+    }
+
+
+
+    /* =================================================
+       ENVELOPE BACK
+    ================================================= */
+
+    .envelope-back {
+
+        border-radius: 7px;
+
+        transform:
+            translateZ(-18px);
+    }
+
+
+
+    /* =================================================
+       LETTER INSIDE
+    ================================================= */
+
+    .letter-card {
+
+        /*
+           Make the card narrower.
+           This fixes the ugly white pieces
+           showing on both sides.
+        */
+
+        width: 72%;
+
+        height: 77%;
+
+        left: 14%;
+
+        bottom: 14%;
+
+
+        border-radius:
+            6px 6px
+            2px 2px;
+
+
+        transform:
+
+            translateZ(-16px)
+
+            translateY(28%);
+
+
+        box-shadow:
+
+            0 15px 35px
+            rgba(0,0,0,.26);
+    }
+
+
+
+    .letter-card::before {
+
+        inset: 8px;
+    }
+
+
+
+    .letter-content {
+
+        padding-top: 20px;
+    }
+
+
+    .letter-symbol {
+
+        width: 39px;
+        height: 39px;
+
+        margin-bottom: 7px;
+
+        font-size: 21px;
+    }
+
+
+    .letter-small {
+
+        font-size: 12px;
+    }
+
+
+    .letter-content h2 {
+
+        font-size:
+            clamp(
+                26px,
+                8vw,
+                37px
+            );
+    }
+
+
+
+    /* =================================================
+       TOP FLAP
+    ================================================= */
+
+    .top-flap {
+
+        height: 71%;
+
+        transform:
+
+            translateZ(22px)
+
+            rotateX(0deg);
+    }
+
+
+
+    /* =================================================
+       FRONT FOLDS
+    ================================================= */
+
+    .front-left,
+    .front-right {
+
+        height: 80%;
+    }
+
+
+    .front-bottom {
+
+        height: 67%;
+    }
+
+
+
+    /* =================================================
+       EMBROIDERY
+    ================================================= */
+
+    .embroidery {
+
+        height: 70px;
+
+        bottom: 2px;
+
+        opacity: .23;
+    }
+
+
+
+    /* =================================================
+       SEAL
+    ================================================= */
+
+    .seal-wrap {
+
+        left: 50%;
+
+        /*
+         Better position in envelope
+        */
+
+        top: 53%;
+
+
+        transform:
+
+            translate(-50%, -15%)
+
+            translateZ(90px);
+    }
+
+
+
+    .seal {
+
+        width:
+            clamp(
+                92px,
+                25vw,
+                112px
+            );
+
+        height:
+            clamp(
+                92px,
+                25vw,
+                112px
+            );
+    }
+
+
+
+    .seal-design {
+
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .seal-design svg {
+
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .seal-initials {
+
+        font-size: 16px;
+    }
+
+
+
+    /* =================================================
+       OPEN LABEL
+    ================================================= */
+
+    .open-label {
+
+        left: 50%;
+
+        /*
+         Keeps label inside visible viewport
+        */
+
+        bottom: -58px;
+
+
+        width: 260px;
+
+        white-space: normal;
+
+        text-align: center;
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+        transform:
+            translateX(-50%);
+    }
+
+
+    .open-label span {
+
+        margin-top: 4px;
+
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+
+    /* =================================================
+       ORBS
+    ================================================= */
+
+    .orb-1 {
+
+        width: 55px;
+        height: 55px;
+
+        right: 7%;
+
+        top: 5%;
+    }
+
+
+    .orb-2 {
+
+        width: 20px;
+        height: 20px;
+
+        left: 7%;
+
+        top: 18%;
+    }
+
+
+    .orb-3 {
+
+        width: 32px;
+        height: 32px;
+
+        right: 13%;
+
+        bottom: 8%;
+    }
+
+
+
+    /* ambient glow */
+
+    .ambient-light {
+
+        width: 430px;
+        height: 430px;
+
+        filter:
+            blur(25px);
+
+        opacity: .7;
     }
 
 }
