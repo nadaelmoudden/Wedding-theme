@@ -6138,3 +6138,780 @@ a {
   }
 
 }
+
+
+
+
+
+/* =========================================
+   WEDDING RSVP — LUXURY EDITION
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap');
+
+.rsvp-luxe {
+  --wine: #430b1e;
+  --wine-light: #751d3c;
+  --gold: #dfb776;
+  --gold-light: #f9e5bd;
+  --cream: #fff4e9;
+  --pink: #f2b7c8;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  padding: 115px 22px 100px;
+  text-align: center;
+  color: var(--cream);
+
+  background:
+    radial-gradient(
+      ellipse at 50% 6%,
+      #85304c 0%,
+      transparent 53%
+    ),
+    radial-gradient(
+      ellipse at 50% 95%,
+      #690d2d 0%,
+      transparent 62%
+    ),
+    linear-gradient(
+      160deg,
+      #370717 0%,
+      #5d112c 50%,
+      #300512 100%
+    );
+
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Main content */
+
+.rsvp-luxe .rsvp-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Background circles */
+
+.rsvp-luxe .rsvp-bg-circle {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border: 1px solid rgba(223,183,118,.13);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.rsvp-luxe .rsvp-circle-one {
+  top: -350px;
+  right: -270px;
+}
+
+.rsvp-luxe .rsvp-circle-two {
+  bottom: -360px;
+  left: -270px;
+}
+
+/* Floating particles */
+
+.rsvp-luxe .rsvp-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.rsvp-luxe .rsvp-particle {
+  position: absolute;
+  width: var(--particle-size, 3px);
+  height: var(--particle-size, 3px);
+  top: var(--particle-top, 50%);
+  left: var(--particle-left, 50%);
+  background: #f3c47f;
+  border-radius: 50%;
+  box-shadow: 0 0 12px 3px rgba(255,196,104,.4);
+  opacity: 0;
+  animation: rsvpParticle var(--particle-duration, 6s)
+    ease-in-out infinite;
+  animation-delay: var(--particle-delay, 0s);
+}
+
+@keyframes rsvpParticle {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(15px) scale(.6);
+  }
+
+  45% {
+    opacity: .75;
+  }
+
+  65% {
+    opacity: .35;
+  }
+
+  80% {
+    transform: translateY(-40px) scale(1.2);
+  }
+}
+
+/* Top ornament */
+
+.rsvp-luxe .rsvp-top-ornament,
+.rsvp-luxe .rsvp-bottom-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: var(--gold);
+}
+
+.rsvp-luxe .ornament-line {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(223,183,118,.7),
+    transparent
+  );
+}
+
+.rsvp-luxe .ornament-icon {
+  font-family: 'Amiri', serif;
+  font-size: 42px;
+  line-height: 1;
+  color: var(--gold-light);
+}
+
+/* Alert badge */
+
+.rsvp-luxe .rsvp-alert-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin: 32px 0 24px;
+  padding: 9px 30px;
+  border: 1px solid rgba(242,190,122,.65);
+  border-radius: 60px;
+  background: rgba(57,5,22,.55);
+  color: var(--gold-light);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  box-shadow: 0 0 22px rgba(239,184,105,.12);
+  animation: rsvpBadgeGlow 3s ease-in-out infinite;
+}
+
+.rsvp-luxe .alert-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f6c27c;
+  box-shadow: 0 0 12px #f6c27c;
+  animation: rsvpDot 2s ease-in-out infinite;
+}
+
+.rsvp-luxe .alert-sparkle {
+  color: var(--gold);
+  font-size: 12px;
+}
+
+@keyframes rsvpBadgeGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(239,184,105,.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(239,184,105,.3);
+  }
+}
+
+@keyframes rsvpDot {
+  50% { opacity: .3; transform: scale(.75); }
+}
+
+/* Main heading */
+
+.rsvp-luxe .rsvp-heading h2 {
+  margin: 0;
+  font-family: 'Amiri', serif;
+  font-size: clamp(42px, 5.2vw, 76px);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--cream);
+  text-shadow: 0 5px 30px rgba(255,210,183,.1);
+}
+
+.rsvp-luxe .rsvp-heading h2 span {
+  display: block;
+  color: var(--gold-light);
+}
+
+.rsvp-luxe .rsvp-subtitle {
+  margin: 5px 0 0;
+  font-family: 'Amiri', serif;
+  font-size: clamp(21px, 2.2vw, 30px);
+  color: #eec5cc;
+}
+
+.rsvp-luxe .rsvp-heart {
+  display: inline-block;
+  color: #f6a6bf;
+  font-size: 29px;
+  margin-right: 4px;
+  animation: rsvpHeart 2.5s ease-in-out infinite;
+}
+
+@keyframes rsvpHeart {
+  50% { transform: scale(1.18); }
+}
+
+/* Divider */
+
+.rsvp-luxe .rsvp-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin: 27px auto 32px;
+}
+
+.rsvp-luxe .rsvp-divider span {
+  width: min(25vw, 130px);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold)
+  );
+}
+
+.rsvp-luxe .rsvp-divider span:last-child {
+  transform: rotate(180deg);
+}
+
+.rsvp-luxe .rsvp-divider i {
+  font-style: normal;
+  font-size: 24px;
+  color: var(--gold);
+}
+
+/* =========================================
+   BIG TIME CARD
+========================================= */
+
+.rsvp-luxe .rsvp-time-section {
+  margin: 0 auto 35px;
+}
+
+.rsvp-luxe .rsvp-time-label {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f5d6bc;
+}
+
+.rsvp-luxe .rsvp-time-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.rsvp-luxe .rsvp-side-decoration {
+  color: var(--gold);
+  font-size: 25px;
+  animation: rsvpTwinkle 3s ease-in-out infinite;
+}
+
+@keyframes rsvpTwinkle {
+  50% {
+    opacity: .3;
+    transform: scale(.75) rotate(45deg);
+  }
+}
+
+.rsvp-luxe .rsvp-time-card {
+  position: relative;
+  overflow: hidden;
+  width: min(100%, 460px);
+  padding: 22px 30px;
+  border: 1.5px solid var(--gold);
+  border-radius: 75px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(117,29,60,.9),
+    rgba(48,5,22,.95)
+  );
+
+  box-shadow:
+    0 0 0 5px rgba(223,183,118,.07),
+    0 0 35px rgba(234,172,92,.2),
+    inset 0 0 25px rgba(255,216,164,.05);
+
+  animation: rsvpTimePulse 4s ease-in-out infinite;
+}
+
+.rsvp-luxe .rsvp-time-glow {
+  position: absolute;
+  width: 130px;
+  height: 230px;
+  top: -70px;
+  left: -160px;
+  transform: rotate(25deg);
+  background: rgba(255,234,190,.2);
+  filter: blur(28px);
+  animation: rsvpShine 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes rsvpShine {
+  0%, 20% { left: -160px; }
+  80%, 100% { left: 115%; }
+}
+
+@keyframes rsvpTimePulse {
+  0%, 100% {
+    box-shadow:
+      0 0 0 5px rgba(223,183,118,.07),
+      0 0 25px rgba(234,172,92,.12);
+  }
+  50% {
+    box-shadow:
+      0 0 0 8px rgba(223,183,118,.04),
+      0 0 48px rgba(234,172,92,.35);
+  }
+}
+
+.rsvp-luxe .rsvp-time-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.rsvp-luxe .rsvp-clock {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  color: var(--gold-light);
+  filter: drop-shadow(0 0 8px rgba(223,183,118,.4));
+}
+
+.rsvp-luxe .rsvp-time-text {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  color: var(--gold-light);
+}
+
+.rsvp-luxe .rsvp-time-text strong {
+  font-family: 'Amiri', serif;
+  font-size: clamp(53px, 7vw, 83px);
+  font-weight: 700;
+  line-height: 1.15;
+  font-variant-numeric: lining-nums;
+}
+
+.rsvp-luxe .rsvp-time-text span {
+  font-family: 'Amiri', serif;
+  font-size: clamp(25px, 4vw, 38px);
+}
+
+.rsvp-luxe .rsvp-time-footnote {
+  margin: 22px 0 0;
+  color: #e3b8c5;
+  font-size: 14px;
+}
+
+/* =========================================
+   INFORMATION CARD
+========================================= */
+
+.rsvp-luxe .rsvp-info-card {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto 25px;
+  padding: 36px 45px;
+  border: 1px solid rgba(246,208,164,.24);
+  border-radius: 20px;
+  background: rgba(255,244,233,.055);
+  box-shadow: inset 0 1px rgba(255,255,255,.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.rsvp-luxe .rsvp-card-topline {
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  box-shadow: 0 0 15px var(--gold);
+}
+
+.rsvp-luxe .rsvp-card-icon {
+  display: block;
+  font-size: 25px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.rsvp-luxe .rsvp-info-card p {
+  max-width: 690px;
+  margin: 0 auto;
+  color: #f5e2df;
+  font-family: 'Amiri', serif;
+  font-size: clamp(21px, 2.3vw, 27px);
+  line-height: 1.95;
+}
+
+.rsvp-luxe .rsvp-info-card strong {
+  color: var(--gold-light);
+}
+
+/* =========================================
+   SPECIAL WARNING CARD
+========================================= */
+
+.rsvp-luxe .rsvp-warning-card {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 50px 30px;
+  border: 1px solid rgba(237,187,115,.65);
+  border-radius: 22px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(118,36,58,.65),
+    rgba(53,8,25,.8)
+  );
+
+  box-shadow:
+    0 0 35px rgba(200,125,92,.09),
+    inset 0 0 30px rgba(255,196,137,.035);
+}
+
+.rsvp-luxe .rsvp-warning-card::before,
+.rsvp-luxe .rsvp-warning-card::after {
+  content: "✧";
+  position: absolute;
+  color: var(--gold);
+  font-size: 26px;
+  opacity: .7;
+}
+
+.rsvp-luxe .rsvp-warning-card::before {
+  top: 12px;
+  right: 18px;
+}
+
+.rsvp-luxe .rsvp-warning-card::after {
+  bottom: 12px;
+  left: 18px;
+}
+
+.rsvp-luxe .rsvp-warning-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.rsvp-luxe .rsvp-warning-heading h3 {
+  margin: 0;
+  font-family: 'Amiri', serif;
+  font-size: clamp(29px, 3vw, 39px);
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.rsvp-luxe .rsvp-warning-decor {
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.rsvp-luxe .rsvp-warning-divider {
+  width: 85px;
+  height: 1px;
+  margin: 0 auto 23px;
+  background: var(--gold);
+  opacity: .65;
+}
+
+.rsvp-luxe .rsvp-warning-card p {
+  max-width: 690px;
+  margin: 0 auto;
+  color: #f7e5e2;
+  font-family: 'Amiri', serif;
+  font-size: clamp(21px, 2.25vw, 26px);
+  line-height: 2.05;
+}
+
+.rsvp-luxe .rsvp-warning-card p strong {
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+.rsvp-luxe .rsvp-warning-bottom {
+  margin-top: 17px;
+  color: var(--gold);
+  font-size: 28px;
+}
+
+/* =========================================
+   CLOSING MESSAGE
+========================================= */
+
+.rsvp-luxe .rsvp-closing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 43px auto 34px;
+}
+
+.rsvp-luxe .rsvp-closing p {
+  margin: 0;
+  font-family: 'Amiri', serif;
+  font-size: clamp(23px, 3vw, 33px);
+  color: #f4d2d4;
+}
+
+.rsvp-luxe .rsvp-closing p span {
+  color: var(--gold-light);
+}
+
+.rsvp-luxe .closing-heart {
+  color: var(--gold);
+  font-size: 26px;
+  animation: rsvpHeart 3s ease-in-out infinite;
+}
+
+/* =========================================
+   WHATSAPP BUTTON
+========================================= */
+
+.rsvp-luxe .rsvp-action {
+  display: flex;
+  justify-content: center;
+}
+
+.rsvp-luxe .rsvp-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: 66px;
+  padding: 14px 40px;
+  border: 1px solid #ffe5b1;
+  border-radius: 60px;
+
+  background: linear-gradient(
+    135deg,
+    #f9e4bd,
+    #d5a76c
+  );
+
+  color: #481025;
+  font-family: 'Cairo', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.15),
+    0 0 25px rgba(239,190,120,.25);
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.rsvp-luxe .rsvp-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.rsvp-luxe .rsvp-btn:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 16px 35px rgba(0,0,0,.25),
+    0 0 38px rgba(239,190,120,.5);
+}
+
+.rsvp-luxe .rsvp-btn:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 5px;
+}
+
+/* Bottom ornament */
+
+.rsvp-luxe .rsvp-bottom-ornament {
+  margin-top: 55px;
+}
+
+.rsvp-luxe .rsvp-bottom-ornament span {
+  width: 65px;
+  height: 1px;
+  background: rgba(223,183,118,.55);
+}
+
+.rsvp-luxe .rsvp-bottom-ornament b {
+  font-family: 'Amiri', serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.rsvp-luxe.rsvp--ready [data-rsvp-reveal] {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity .9s ease,
+    transform .9s cubic-bezier(.2,.7,.2,1);
+}
+
+.rsvp-luxe.rsvp--ready [data-rsvp-reveal].rsvp-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .rsvp-luxe {
+    padding: 80px 16px 75px;
+  }
+
+  .rsvp-luxe .rsvp-heading h2 {
+    font-size: clamp(38px, 9vw, 54px);
+    line-height: 1.55;
+  }
+
+  .rsvp-luxe .rsvp-subtitle {
+    font-size: 22px;
+  }
+
+  .rsvp-luxe .rsvp-time-label {
+    font-size: 17px;
+  }
+
+  .rsvp-luxe .rsvp-time-wrapper {
+    gap: 9px;
+  }
+
+  .rsvp-luxe .rsvp-side-decoration {
+    font-size: 15px;
+  }
+
+  .rsvp-luxe .rsvp-time-card {
+    padding: 18px 16px;
+  }
+
+  .rsvp-luxe .rsvp-time-content {
+    gap: 12px;
+  }
+
+  .rsvp-luxe .rsvp-clock {
+    width: 32px;
+    height: 32px;
+  }
+
+  .rsvp-luxe .rsvp-time-text strong {
+    font-size: clamp(45px, 11vw, 66px);
+  }
+
+  .rsvp-luxe .rsvp-time-text span {
+    font-size: 25px;
+  }
+
+  .rsvp-luxe .rsvp-info-card {
+    padding: 27px 20px;
+  }
+
+  .rsvp-luxe .rsvp-warning-card {
+    padding: 32px 20px 25px;
+  }
+
+  .rsvp-luxe .rsvp-info-card p,
+  .rsvp-luxe .rsvp-warning-card p {
+    font-size: 21px;
+    line-height: 1.9;
+  }
+
+  .rsvp-luxe .rsvp-closing {
+    gap: 8px;
+  }
+
+  .rsvp-luxe .rsvp-closing p {
+    font-size: 23px;
+  }
+
+  .rsvp-luxe .closing-heart {
+    font-size: 18px;
+  }
+
+  .rsvp-luxe .rsvp-btn {
+    width: min(100%, 350px);
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .rsvp-luxe .rsvp-time-text {
+    gap: 5px;
+  }
+
+  .rsvp-luxe .rsvp-time-text strong {
+    font-size: 43px;
+  }
+
+  .rsvp-luxe .rsvp-time-text span {
+    font-size: 22px;
+  }
+
+  .rsvp-luxe .rsvp-clock {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .rsvp-luxe *,
+  .rsvp-luxe *::before,
+  .rsvp-luxe *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .rsvp-luxe.rsvp--ready [data-rsvp-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}

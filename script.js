@@ -2359,11 +2359,11 @@
      COUNTDOWN
   ========================================================= */
 
-  const WEDDING_DATE =
-    new Date(
-      "2026-12-31T19:00:00+01:00"
-    )
-    .getTime();
+ const WEDDING_DATE =
+  new Date(
+    "2026-12-31T16:00:00+01:00"
+  )
+  .getTime();
 
 
   const countdownElements =
@@ -2775,3 +2775,106 @@
     );
 
 })();
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const section = document.querySelector(".rsvp-luxe");
+
+  if (!section) return;
+
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  // =====================================
+  // FLOATING GOLDEN PARTICLES
+  // =====================================
+
+  const particleContainer =
+    section.querySelector(".rsvp-particles");
+
+  if (particleContainer && !reduceMotion) {
+
+    const particleCount =
+      window.innerWidth < 768 ? 15 : 32;
+
+    for (let i = 0; i < particleCount; i++) {
+
+      const particle =
+        document.createElement("span");
+
+      particle.className = "rsvp-particle";
+
+      const size = Math.random() * 3 + 2;
+      const top = Math.random() * 100;
+      const left = Math.random() * 100;
+      const duration = Math.random() * 5 + 4;
+      const delay = Math.random() * -8;
+
+      particle.style.setProperty(
+        "--particle-size", `${size}px`
+      );
+
+      particle.style.setProperty(
+        "--particle-top", `${top}%`
+      );
+
+      particle.style.setProperty(
+        "--particle-left", `${left}%`
+      );
+
+      particle.style.setProperty(
+        "--particle-duration", `${duration}s`
+      );
+
+      particle.style.setProperty(
+        "--particle-delay", `${delay}s`
+      );
+
+      particleContainer.appendChild(particle);
+    }
+  }
+
+  // =====================================
+  // REVEAL ON SCROLL
+  // =====================================
+
+  const revealElements = section.querySelectorAll(
+    "[data-rsvp-reveal]"
+  );
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+
+      entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add("rsvp-visible");
+
+          observer.unobserve(entry.target);
+        }
+
+      });
+
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -20px 0px"
+    }
+  );
+
+  section.classList.add("rsvp--ready");
+
+  revealElements.forEach((element) => {
+    observer.observe(element);
+  });
+
+});

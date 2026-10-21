@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#751b35">
 
   <title>دعوة زفاف | ندى وعثمان</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@300;400;500;600&display=swap"
-    rel="stylesheet"
-  >
+    rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -34,21 +27,10 @@
          MUSIC
     ========================================== -->
 
-    <audio
-      id="bgMusic"
-      preload="auto"
-      loop
-      playsinline
-    >
-      <source
-        src="assets/fostanek-al-abyad.mp3"
-        type="audio/mpeg"
-      >
+    <audio id="bgMusic" preload="auto" loop playsinline>
+      <source src="assets/fostanek-al-abyad.mp3" type="audio/mpeg">
 
-      <source
-        src="assets/wedding-ambient.wav"
-        type="audio/wav"
-      >
+      <source src="assets/wedding-ambient.wav" type="audio/wav">
     </audio>
 
 
@@ -56,118 +38,59 @@
          OPENING / ENVELOPE
     ========================================== -->
 
-    <div
-      class="opening"
-      id="opening"
-    >
+    <div class="opening" id="opening">
 
-      <div
-        class="invitation-stage"
-        id="stage"
-      >
+      <div class="invitation-stage" id="stage">
 
         <!-- Open envelope -->
 
-        <div
-          class="envelope-plane"
-          id="openPlane"
-        >
-          <img
-            src="assets/envelope-open.jpg"
-            alt="ظرف دعوة الزفاف مفتوح"
-          >
+        <div class="envelope-plane" id="openPlane">
+          <img src="assets/envelope-open.jpg" alt="ظرف دعوة الزفاف مفتوح">
         </div>
 
 
         <!-- Closed envelope -->
 
-        <div
-          class="envelope-plane"
-          id="closedPlane"
-        >
-          <img
-            src="assets/envelope-closed.jpg"
-            alt="ظرف دعوة الزفاف"
-          >
+        <div class="envelope-plane" id="closedPlane">
+          <img src="assets/envelope-closed.jpg" alt="ظرف دعوة الزفاف">
         </div>
 
 
         <!-- Glow image -->
 
-        <div
-          class="envelope-plane"
-          id="glowPlane"
-          aria-hidden="true"
-        >
-          <img
-            src="assets/envelope-glow.jpg"
-            alt=""
-          >
+        <div class="envelope-plane" id="glowPlane" aria-hidden="true">
+          <img src="assets/envelope-glow.jpg" alt="">
         </div>
 
 
         <!-- 3D flap -->
 
-        <div
-          class="flap-3d"
-          id="flap3d"
-          aria-hidden="true"
-        >
-          <img
-            src="assets/envelope-glow.jpg"
-            alt=""
-          >
+        <div class="flap-3d" id="flap3d" aria-hidden="true">
+          <img src="assets/envelope-glow.jpg" alt="">
         </div>
 
 
         <!-- Effects -->
 
-        <div
-          class="gold-wash"
-          id="goldWash"
-          aria-hidden="true"
-        ></div>
+        <div class="gold-wash" id="goldWash" aria-hidden="true"></div>
 
-        <div
-          class="opening-flash"
-          id="openingFlash"
-          aria-hidden="true"
-        ></div>
+        <div class="opening-flash" id="openingFlash" aria-hidden="true"></div>
 
-        <div
-          class="spark-field"
-          id="sparkField"
-          aria-hidden="true"
-        ></div>
+        <div class="spark-field" id="sparkField" aria-hidden="true"></div>
 
-        <div
-          class="open-confirmation"
-          id="openConfirmation"
-        >
+        <div class="open-confirmation" id="openConfirmation">
           Invitation opened
         </div>
 
-        <div
-          class="opening-edge"
-          id="openingEdge"
-          aria-hidden="true"
-        ></div>
+        <div class="opening-edge" id="openingEdge" aria-hidden="true"></div>
 
 
         <!-- Open button -->
 
-        <button
-          class="seal-hotspot"
-          id="openSeal"
-          type="button"
-          aria-label="فتح الدعوة"
-        ></button>
+        <button class="seal-hotspot" id="openSeal" type="button" aria-label="فتح الدعوة"></button>
 
 
-        <div
-          class="tap-label"
-          id="tapLabel"
-        >
+        <div class="tap-label" id="tapLabel">
           <span></span>
           Tap the seal to open
         </div>
@@ -181,10 +104,7 @@
          WEDDING WEBSITE
     ========================================== -->
 
-    <main
-      class="details"
-      id="detailsPage"
-    >
+    <main class="details" id="detailsPage">
 
 
       <!-- =====================================
@@ -193,90 +113,50 @@
 
       <section class="details-hero">
 
-        <svg
-          class="botanical top"
-          viewBox="0 0 300 300"
-          fill="none"
-          aria-hidden="true"
-        >
+        <svg class="botanical top" viewBox="0 0 300 300" fill="none" aria-hidden="true">
 
-          <path
-            d="
+          <path d="
               M290 20
               C230 75 225 130 160 166
               C95 203 55 242 15 290
-            "
-            stroke="currentColor"
-            stroke-width="2"
-          />
+            " stroke="currentColor" stroke-width="2" />
 
-          <path
-            d="
+          <path d="
               M218 115
               C250 87 276 87 291 99
               C271 127 245 132 218 115Z
-            "
-            stroke="currentColor"
-            stroke-width="2"
-          />
+            " stroke="currentColor" stroke-width="2" />
 
-          <path
-            d="
+          <path d="
               M160 166
               C115 143 83 149 59 175
               C86 197 121 198 160 166Z
-            "
-            stroke="currentColor"
-            stroke-width="2"
-          />
+            " stroke="currentColor" stroke-width="2" />
 
-          <circle
-            cx="246"
-            cy="65"
-            r="17"
-            stroke="currentColor"
-            stroke-width="2"
-          />
+          <circle cx="246" cy="65" r="17" stroke="currentColor" stroke-width="2" />
 
         </svg>
 
 
-        <svg
-          class="botanical bottom"
-          viewBox="0 0 300 300"
-          fill="none"
-          aria-hidden="true"
-        >
+        <svg class="botanical bottom" viewBox="0 0 300 300" fill="none" aria-hidden="true">
 
-          <path
-            d="
+          <path d="
               M290 20
               C230 75 225 130 160 166
               C95 203 55 242 15 290
-            "
-            stroke="currentColor"
-            stroke-width="2"
-          />
+            " stroke="currentColor" stroke-width="2" />
 
-          <path
-            d="
+          <path d="
               M218 115
               C250 87 276 87 291 99
               C271 127 245 132 218 115Z
-            "
-            stroke="currentColor"
-            stroke-width="2"
-          />
+            " stroke="currentColor" stroke-width="2" />
 
-          <path
-            d="
+          <path d="
               M160 166
               C115 143 83 149 59 175
               C86 197 121 198 160 166Z
-            "
-            stroke="currentColor"
-            stroke-width="2"
-          />
+            " stroke="currentColor" stroke-width="2" />
 
         </svg>
 
@@ -285,43 +165,22 @@
              MAIN INVITATION CARD
         ================================== -->
 
-        <div
-          class="main-card luxury-card reveal"
-          id="weddingCard"
-        >
+        <div class="main-card luxury-card reveal" id="weddingCard">
 
-          <div
-            class="lux-bg-circle circle-one"
-            aria-hidden="true"
-          ></div>
+          <div class="lux-bg-circle circle-one" aria-hidden="true"></div>
 
-          <div
-            class="lux-bg-circle circle-two"
-            aria-hidden="true"
-          ></div>
+          <div class="lux-bg-circle circle-two" aria-hidden="true"></div>
 
-          <div
-            class="lux-maroon-panel"
-            aria-hidden="true"
-          ></div>
+          <div class="lux-maroon-panel" aria-hidden="true"></div>
 
-          <div
-            class="lux-gold-line gold-line-one"
-            aria-hidden="true"
-          ></div>
+          <div class="lux-gold-line gold-line-one" aria-hidden="true"></div>
 
-          <div
-            class="lux-gold-line gold-line-two"
-            aria-hidden="true"
-          ></div>
+          <div class="lux-gold-line gold-line-two" aria-hidden="true"></div>
 
 
           <!-- Monogram -->
 
-          <div
-            class="lux-monogram"
-            aria-label="ندى وعثمان"
-          >
+          <div class="lux-monogram" aria-label="ندى وعثمان">
             <span>ن</span>
 
             <i>&amp;</i>
@@ -345,50 +204,28 @@
 
           <div class="photo-scene">
 
-            <div
-              class="photo-burgundy-shadow"
-              aria-hidden="true"
-            ></div>
+            <div class="photo-burgundy-shadow" aria-hidden="true"></div>
 
-            <div
-              class="photo-gold-frame"
-              aria-hidden="true"
-            ></div>
+            <div class="photo-gold-frame" aria-hidden="true"></div>
 
 
             <div class="photo-frame">
 
-              <img
-                src="/assets/nada-othman.jpg"
-                alt="ندى وعثمان"
-                class="couple-photo"
-              >
+              <img src="/assets/nada-othman.jpg" alt="ندى وعثمان" class="couple-photo">
 
-              <div
-                class="photo-gradient"
-                aria-hidden="true"
-              ></div>
+              <div class="photo-gradient" aria-hidden="true"></div>
 
-              <div
-                class="photo-shine"
-                aria-hidden="true"
-              ></div>
+              <div class="photo-shine" aria-hidden="true"></div>
 
             </div>
 
 
-            <div
-              class="floating-flower"
-              aria-hidden="true"
-            >
+            <div class="floating-flower" aria-hidden="true">
               ❦
             </div>
 
 
-            <div
-              class="photo-date-badge"
-              aria-label="31 دجنبر 2026"
-            >
+            <div class="photo-date-badge" aria-label="31 دجنبر 2026">
               <small>DEC</small>
 
               <strong>31</strong>
@@ -424,10 +261,7 @@
 
           <div class="lux-content-panel">
 
-            <div
-              class="lux-divider"
-              aria-hidden="true"
-            >
+            <div class="lux-divider" aria-hidden="true">
               <span></span>
               <i>◆</i>
               <span></span>
@@ -515,10 +349,7 @@
           </div>
 
 
-          <div
-            class="lux-global-shine"
-            aria-hidden="true"
-          ></div>
+          <div class="lux-global-shine" aria-hidden="true"></div>
 
         </div>
 
@@ -531,25 +362,13 @@
 
       <section class="venue-section">
 
-        <div
-          class="venue-glow venue-glow-one"
-          aria-hidden="true"
-        ></div>
+        <div class="venue-glow venue-glow-one" aria-hidden="true"></div>
 
-        <div
-          class="venue-glow venue-glow-two"
-          aria-hidden="true"
-        ></div>
+        <div class="venue-glow venue-glow-two" aria-hidden="true"></div>
 
-        <div
-          class="venue-ring ring-one"
-          aria-hidden="true"
-        ></div>
+        <div class="venue-ring ring-one" aria-hidden="true"></div>
 
-        <div
-          class="venue-ring ring-two"
-          aria-hidden="true"
-        ></div>
+        <div class="venue-ring ring-two" aria-hidden="true"></div>
 
 
         <div class="venue-heading reveal">
@@ -564,10 +383,7 @@
           </h2>
 
 
-          <div
-            class="venue-title-line"
-            aria-hidden="true"
-          >
+          <div class="venue-title-line" aria-hidden="true">
             <span></span>
             <i>◆</i>
             <span></span>
@@ -588,10 +404,7 @@
              VENUE SLIDER
         ================================== -->
 
-        <div
-          class="venue-slider"
-          id="venueSlider"
-        >
+        <div class="venue-slider" id="venueSlider">
 
           <div class="venue-slider-stage">
 
@@ -602,20 +415,11 @@
 
               <div class="venue-image-wrap">
 
-                <img
-                  src="/assets/place-1.jpg"
-                  alt="قاعة الحفل"
-                >
+                <img src="/assets/place-1.jpg" alt="قاعة الحفل">
 
-                <div
-                  class="venue-image-overlay"
-                  aria-hidden="true"
-                ></div>
+                <div class="venue-image-overlay" aria-hidden="true"></div>
 
-                <div
-                  class="venue-photo-shine"
-                  aria-hidden="true"
-                ></div>
+                <div class="venue-photo-shine" aria-hidden="true"></div>
 
               </div>
 
@@ -631,7 +435,7 @@
                 </small>
 
                 <h3>
-                  قصر الأفراح
+                  قصر زويتن
                 </h3>
 
                 <p>
@@ -650,20 +454,11 @@
 
               <div class="venue-image-wrap">
 
-                <img
-                  src="/assets/place-2.jpg"
-                  alt="ديكور قاعة الزفاف"
-                >
+                <img src="/assets/place-2.jpg" alt="ديكور قاعة الزفاف">
 
-                <div
-                  class="venue-image-overlay"
-                  aria-hidden="true"
-                ></div>
+                <div class="venue-image-overlay" aria-hidden="true"></div>
 
-                <div
-                  class="venue-photo-shine"
-                  aria-hidden="true"
-                ></div>
+                <div class="venue-photo-shine" aria-hidden="true"></div>
 
               </div>
 
@@ -698,20 +493,11 @@
 
               <div class="venue-image-wrap">
 
-                <img
-                  src="/assets/place-3.jpg"
-                  alt="قاعة الزفاف"
-                >
+                <img src="/assets/place-3.jpg" alt="قاعة الزفاف">
 
-                <div
-                  class="venue-image-overlay"
-                  aria-hidden="true"
-                ></div>
+                <div class="venue-image-overlay" aria-hidden="true"></div>
 
-                <div
-                  class="venue-photo-shine"
-                  aria-hidden="true"
-                ></div>
+                <div class="venue-photo-shine" aria-hidden="true"></div>
 
               </div>
 
@@ -761,49 +547,23 @@
 
           <div class="venue-controls">
 
-            <button
-              type="button"
-              class="venue-arrow venue-prev"
-              aria-label="الصورة السابقة"
-            >
+            <button type="button" class="venue-arrow venue-prev" aria-label="الصورة السابقة">
               ‹
             </button>
 
 
-            <div
-              class="venue-pagination"
-              aria-label="اختيار صورة القاعة"
-            >
+            <div class="venue-pagination" aria-label="اختيار صورة القاعة">
 
-              <button
-                type="button"
-                class="venue-dot active"
-                data-index="0"
-                aria-label="الصورة الأولى"
-              ></button>
+              <button type="button" class="venue-dot active" data-index="0" aria-label="الصورة الأولى"></button>
 
-              <button
-                type="button"
-                class="venue-dot"
-                data-index="1"
-                aria-label="الصورة الثانية"
-              ></button>
+              <button type="button" class="venue-dot" data-index="1" aria-label="الصورة الثانية"></button>
 
-              <button
-                type="button"
-                class="venue-dot"
-                data-index="2"
-                aria-label="الصورة الثالثة"
-              ></button>
+              <button type="button" class="venue-dot" data-index="2" aria-label="الصورة الثالثة"></button>
 
             </div>
 
 
-            <button
-              type="button"
-              class="venue-arrow venue-next"
-              aria-label="الصورة التالية"
-            >
+            <button type="button" class="venue-arrow venue-next" aria-label="الصورة التالية">
               ›
             </button>
 
@@ -820,25 +580,13 @@
 
       <section class="information luxury-info-section">
 
-        <div
-          class="info-bg-shape shape-one"
-          aria-hidden="true"
-        ></div>
+        <div class="info-bg-shape shape-one" aria-hidden="true"></div>
 
-        <div
-          class="info-bg-shape shape-two"
-          aria-hidden="true"
-        ></div>
+        <div class="info-bg-shape shape-two" aria-hidden="true"></div>
 
-        <div
-          class="info-bg-ring ring-one"
-          aria-hidden="true"
-        ></div>
+        <div class="info-bg-ring ring-one" aria-hidden="true"></div>
 
-        <div
-          class="info-bg-ring ring-two"
-          aria-hidden="true"
-        ></div>
+        <div class="info-bg-ring ring-two" aria-hidden="true"></div>
 
 
         <div class="info-section-heading reveal">
@@ -852,10 +600,7 @@
           </h2>
 
 
-          <div
-            class="heading-divider"
-            aria-hidden="true"
-          >
+          <div class="heading-divider" aria-hidden="true">
             <span></span>
             <i>◆</i>
             <span></span>
@@ -880,20 +625,11 @@
 
           <article class="info-card reveal tilt-card">
 
-            <div
-              class="card-glow"
-              aria-hidden="true"
-            ></div>
+            <div class="card-glow" aria-hidden="true"></div>
 
-            <div
-              class="card-border-line"
-              aria-hidden="true"
-            ></div>
+            <div class="card-border-line" aria-hidden="true"></div>
 
-            <div
-              class="card-shine"
-              aria-hidden="true"
-            ></div>
+            <div class="card-shine" aria-hidden="true"></div>
 
             <span class="card-number">
               01
@@ -930,29 +666,18 @@
 
           <!-- Location -->
 
-          <article
-            class="
+          <article class="
               info-card
               info-card-featured
               reveal
               tilt-card
-            "
-          >
+            ">
 
-            <div
-              class="card-glow"
-              aria-hidden="true"
-            ></div>
+            <div class="card-glow" aria-hidden="true"></div>
 
-            <div
-              class="card-border-line"
-              aria-hidden="true"
-            ></div>
+            <div class="card-border-line" aria-hidden="true"></div>
 
-            <div
-              class="card-shine"
-              aria-hidden="true"
-            ></div>
+            <div class="card-shine" aria-hidden="true"></div>
 
             <span class="card-number">
               02
@@ -975,7 +700,7 @@
 
             <p>
 
-              قصر الأفراح
+              قصر زويتن
 
               <br>
 
@@ -983,15 +708,8 @@
 
             </p>
 
-
-            <!--
-              Replace # with your real Google Maps URL
-            -->
-
-            <a
-              href="#"
-              class="location-btn"
-            >
+            <a href="https://maps.app.goo.gl/BGgL2ymDZopSqpa67?g_st=iw" class="location-btn" target="_blank"
+              rel="noopener noreferrer">
               عرض الموقع
             </a>
 
@@ -1002,20 +720,11 @@
 
           <article class="info-card reveal tilt-card">
 
-            <div
-              class="card-glow"
-              aria-hidden="true"
-            ></div>
+            <div class="card-glow" aria-hidden="true"></div>
 
-            <div
-              class="card-border-line"
-              aria-hidden="true"
-            ></div>
+            <div class="card-border-line" aria-hidden="true"></div>
 
-            <div
-              class="card-shine"
-              aria-hidden="true"
-            ></div>
+            <div class="card-shine" aria-hidden="true"></div>
 
             <span class="card-number">
               03
@@ -1059,31 +768,15 @@
 
       <section class="wedding-countdown-section">
 
-        <div
-          class="countdown-light light-one"
-          aria-hidden="true"
-        ></div>
+        <div class="countdown-light light-one" aria-hidden="true"></div>
 
-        <div
-          class="countdown-light light-two"
-          aria-hidden="true"
-        ></div>
+        <div class="countdown-light light-two" aria-hidden="true"></div>
 
-        <div
-          class="countdown-ring countdown-ring-one"
-          aria-hidden="true"
-        ></div>
+        <div class="countdown-ring countdown-ring-one" aria-hidden="true"></div>
 
-        <div
-          class="countdown-ring countdown-ring-two"
-          aria-hidden="true"
-        ></div>
+        <div class="countdown-ring countdown-ring-two" aria-hidden="true"></div>
 
-        <div
-          class="countdown-stars"
-          id="countdownStars"
-          aria-hidden="true"
-        ></div>
+        <div class="countdown-stars" id="countdownStars" aria-hidden="true"></div>
 
 
         <div class="countdown-container reveal">
@@ -1134,10 +827,7 @@
           </div>
 
 
-          <div
-            class="countdown-divider"
-            aria-hidden="true"
-          >
+          <div class="countdown-divider" aria-hidden="true">
             <span></span>
             <i>◆</i>
             <span></span>
@@ -1159,25 +849,16 @@
 
             <div class="countdown-box">
 
-              <div
-                class="countdown-box-glow"
-                aria-hidden="true"
-              ></div>
+              <div class="countdown-box-glow" aria-hidden="true"></div>
 
 
               <div class="countdown-number-wrap">
 
-                <span
-                  class="countdown-number"
-                  id="countdownDays"
-                >
+                <span class="countdown-number" id="countdownDays">
                   00
                 </span>
 
-                <div
-                  class="number-reflection"
-                  aria-hidden="true"
-                ></div>
+                <div class="number-reflection" aria-hidden="true"></div>
 
               </div>
 
@@ -1197,18 +878,12 @@
 
             <div class="countdown-box">
 
-              <div
-                class="countdown-box-glow"
-                aria-hidden="true"
-              ></div>
+              <div class="countdown-box-glow" aria-hidden="true"></div>
 
 
               <div class="countdown-number-wrap">
 
-                <span
-                  class="countdown-number"
-                  id="countdownHours"
-                >
+                <span class="countdown-number" id="countdownHours">
                   00
                 </span>
 
@@ -1230,18 +905,12 @@
 
             <div class="countdown-box">
 
-              <div
-                class="countdown-box-glow"
-                aria-hidden="true"
-              ></div>
+              <div class="countdown-box-glow" aria-hidden="true"></div>
 
 
               <div class="countdown-number-wrap">
 
-                <span
-                  class="countdown-number"
-                  id="countdownMinutes"
-                >
+                <span class="countdown-number" id="countdownMinutes">
                   00
                 </span>
 
@@ -1263,18 +932,12 @@
 
             <div class="countdown-box">
 
-              <div
-                class="countdown-box-glow"
-                aria-hidden="true"
-              ></div>
+              <div class="countdown-box-glow" aria-hidden="true"></div>
 
 
               <div class="countdown-number-wrap">
 
-                <span
-                  class="countdown-number"
-                  id="countdownSeconds"
-                >
+                <span class="countdown-number" id="countdownSeconds">
                   00
                 </span>
 
@@ -1298,10 +961,7 @@
 
           <div class="countdown-date">
 
-            <span
-              class="date-decoration"
-              aria-hidden="true"
-            ></span>
+            <span class="date-decoration" aria-hidden="true"></span>
 
 
             <div>
@@ -1315,16 +975,13 @@
               </strong>
 
               <p>
-                الساعة الرابعة و النصف مساءً
+                الساعة الرابعة مساءً
               </p>
 
             </div>
 
 
-            <span
-              class="date-decoration"
-              aria-hidden="true"
-            ></span>
+            <span class="date-decoration" aria-hidden="true"></span>
 
           </div>
 
@@ -1339,25 +996,13 @@
 
       <section class="wedding-notes-section">
 
-        <div
-          class="notes-glow notes-glow-one"
-          aria-hidden="true"
-        ></div>
+        <div class="notes-glow notes-glow-one" aria-hidden="true"></div>
 
-        <div
-          class="notes-glow notes-glow-two"
-          aria-hidden="true"
-        ></div>
+        <div class="notes-glow notes-glow-two" aria-hidden="true"></div>
 
-        <div
-          class="notes-ring notes-ring-one"
-          aria-hidden="true"
-        ></div>
+        <div class="notes-ring notes-ring-one" aria-hidden="true"></div>
 
-        <div
-          class="notes-ring notes-ring-two"
-          aria-hidden="true"
-        ></div>
+        <div class="notes-ring notes-ring-two" aria-hidden="true"></div>
 
 
         <div class="notes-container">
@@ -1376,10 +1021,7 @@
             </h2>
 
 
-            <div
-              class="notes-heading-line"
-              aria-hidden="true"
-            >
+            <div class="notes-heading-line" aria-hidden="true">
               <span></span>
               <i>◆</i>
               <span></span>
@@ -1400,24 +1042,16 @@
                NOTES SCENE
           ================================== -->
 
-          <div
-            class="notes-scene"
-            id="notesScene"
-          >
+          <div class="notes-scene" id="notesScene">
 
 
             <!-- Center seal -->
 
-            <div
-              class="notes-center-seal"
-              aria-hidden="true"
-            >
+            <div class="notes-center-seal" aria-hidden="true">
 
               <div class="notes-seal-ring"></div>
 
-              <div
-                class="notes-seal-ring second"
-              ></div>
+              <div class="notes-seal-ring second"></div>
 
               <span>
                 ❦
@@ -1434,18 +1068,13 @@
                  CARD 1
             ================================== -->
 
-            <article
-              class="
+            <article class="
                 note-card
                 note-card-one
                 reveal
-              "
-            >
+              ">
 
-              <div
-                class="note-card-light"
-                aria-hidden="true"
-              ></div>
+              <div class="note-card-light" aria-hidden="true"></div>
 
               <span class="note-number">
                 01
@@ -1454,43 +1083,15 @@
 
               <div class="note-icon">
 
-                <svg
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  aria-hidden="true"
-                >
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
 
-                  <rect
-                    x="10"
-                    y="18"
-                    width="44"
-                    height="31"
-                    rx="6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
+                  <rect x="10" y="18" width="44" height="31" rx="6" stroke="currentColor" stroke-width="2" />
 
-                  <path
-                    d="M23 18L27 12H38L42 18"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linejoin="round"
-                  />
+                  <path d="M23 18L27 12H38L42 18" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
 
-                  <circle
-                    cx="32"
-                    cy="34"
-                    r="8"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
+                  <circle cx="32" cy="34" r="8" stroke="currentColor" stroke-width="2" />
 
-                  <path
-                    d="M14 51L51 14"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                  />
+                  <path d="M14 51L51 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
 
                 </svg>
 
@@ -1516,10 +1117,7 @@
               </p>
 
 
-              <div
-                class="note-bottom-line"
-                aria-hidden="true"
-              ></div>
+              <div class="note-bottom-line" aria-hidden="true"></div>
 
             </article>
 
@@ -1528,19 +1126,14 @@
                  CARD 2
             ================================== -->
 
-            <article
-              class="
+            <article class="
                 note-card
                 note-card-two
                 note-featured
                 reveal
-              "
-            >
+              ">
 
-              <div
-                class="note-card-light"
-                aria-hidden="true"
-              ></div>
+              <div class="note-card-light" aria-hidden="true"></div>
 
               <span class="note-number">
                 02
@@ -1549,34 +1142,14 @@
 
               <div class="note-icon">
 
-                <svg
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  aria-hidden="true"
-                >
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
 
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="21"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
+                  <circle cx="32" cy="32" r="21" stroke="currentColor" stroke-width="2" />
 
-                  <path
-                    d="M32 20V33L41 38"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+                  <path d="M32 20V33L41 38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
 
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="2"
-                    fill="currentColor"
-                  />
+                  <circle cx="32" cy="32" r="2" fill="currentColor" />
 
                 </svg>
 
@@ -1621,18 +1194,13 @@
                  CARD 3
             ================================== -->
 
-            <article
-              class="
+            <article class="
                 note-card
                 note-card-three
                 reveal
-              "
-            >
+              ">
 
-              <div
-                class="note-card-light"
-                aria-hidden="true"
-              ></div>
+              <div class="note-card-light" aria-hidden="true"></div>
 
               <span class="note-number">
                 03
@@ -1641,42 +1209,15 @@
 
               <div class="note-icon">
 
-                <svg
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  aria-hidden="true"
-                >
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
 
-                  <rect
-                    x="20"
-                    y="8"
-                    width="24"
-                    height="48"
-                    rx="6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
+                  <rect x="20" y="8" width="24" height="48" rx="6" stroke="currentColor" stroke-width="2" />
 
-                  <path
-                    d="M28 13H36"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                  <path d="M28 13H36" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
-                  <circle
-                    cx="32"
-                    cy="50"
-                    r="1.5"
-                    fill="currentColor"
-                  />
+                  <circle cx="32" cy="50" r="1.5" fill="currentColor" />
 
-                  <path
-                    d="M11 27C15 31 15 35 11 39"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                  <path d="M11 27C15 31 15 35 11 39" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
                 </svg>
 
@@ -1702,10 +1243,7 @@
               </p>
 
 
-              <div
-                class="note-bottom-line"
-                aria-hidden="true"
-              ></div>
+              <div class="note-bottom-line" aria-hidden="true"></div>
 
             </article>
 
@@ -1714,23 +1252,18 @@
                  CARD 4
             ================================== -->
 
-    
 
 
-              <article
-              class="
+
+            <article class="
                 note-card
                 note-card-two
                 note-featured
                 reveal
-              "
-            >
+              ">
 
-            
-              <div
-                class="note-card-light"
-                aria-hidden="true"
-              ></div>
+
+              <div class="note-card-light" aria-hidden="true"></div>
 
               <span class="note-number">
                 04
@@ -1739,56 +1272,25 @@
 
               <div class="note-icon">
 
-                <svg
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  aria-hidden="true"
-                >
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
 
-                  <circle
-                    cx="24"
-                    cy="22"
-                    r="7"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
+                  <circle cx="24" cy="22" r="7" stroke="currentColor" stroke-width="2" />
 
-                  <circle
-                    cx="42"
-                    cy="25"
-                    r="5"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
+                  <circle cx="42" cy="25" r="5" stroke="currentColor" stroke-width="2" />
 
-                  <path
-                    d="
+                  <path d="
                       M12 48
                       C13 37 18 32 24 32
                       C30 32 35 37 36 48
-                    "
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                    " stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
-                  <path
-                    d="
+                  <path d="
                       M34 48
                       C35 40 38 36 42 36
                       C46 36 50 40 51 48
-                    "
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                    " stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 
-                  <path
-                    d="M12 52L52 12"
-                    stroke="currentColor"
-                    stroke-width="2.4"
-                    stroke-linecap="round"
-                  />
+                  <path d="M12 52L52 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
 
                 </svg>
 
@@ -1819,10 +1321,10 @@
               </p>
 
 
-             
 
 
-         
+
+
 
             </article>
 
@@ -1853,39 +1355,149 @@
            RSVP
       ====================================== -->
 
-      <section class="rsvp">
 
-        <div class="rsvp-content reveal">
+      <!-- RSVP / IMPORTANT TIME NOTICE -->
+      <section class="rsvp rsvp-luxe" dir="rtl" id="rsvp">
 
-          <div class="rsvp-symbol">
-            ❦
+        <!-- Background decoration -->
+        <div class="rsvp-bg-circle rsvp-circle-one"></div>
+        <div class="rsvp-bg-circle rsvp-circle-two"></div>
+        <div class="rsvp-particles" aria-hidden="true"></div>
+
+        <div class="rsvp-inner">
+
+          <!-- Top ornament -->
+          <div class="rsvp-top-ornament" data-rsvp-reveal>
+            <span class="ornament-line"></span>
+            <span class="ornament-icon">❦</span>
+            <span class="ornament-line"></span>
           </div>
 
+          <!-- Alert badge -->
+          <div class="rsvp-alert-badge" data-rsvp-reveal>
+            <span class="alert-dot"></span>
+            <span>تنبيه مهم</span>
+            <span class="alert-sparkle">✦</span>
+          </div>
 
-          <h2>
-            هل ستكون معنا؟
-          </h2>
+          <!-- Heading -->
+          <div class="rsvp-heading" data-rsvp-reveal>
+            <h2>
+              لأن اللحظات الجميلة
+              <span>لا تنتظر...</span>
+            </h2>
 
+            <p class="rsvp-subtitle">
+              نرجو أن تكونوا جزءاً من بدايتها
+              <span class="rsvp-heart">♡</span>
+            </p>
+          </div>
 
-          <p>
+          <!-- Decorative separator -->
+          <div class="rsvp-divider" data-rsvp-reveal>
+            <span></span>
+            <i>♡</i>
+            <span></span>
+          </div>
 
-            يسعدنا تأكيد حضوركم
-            ومشاركتنا هذه الليلة المميزة.
+          <!-- Wedding time -->
+          <div class="rsvp-time-section" data-rsvp-reveal>
 
-          </p>
+            <p class="rsvp-time-label">
+              موعد انطلاق حفل الزفاف
+            </p>
 
+            <div class="rsvp-time-wrapper">
 
-          <a
-            href="https://wa.me/212618352558"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="rsvp-btn"
-          >
-            تأكيد الحضور عبر واتساب
-          </a>
+              <span class="rsvp-side-decoration">✦</span>
+
+              <div class="rsvp-time-card">
+
+                <div class="rsvp-time-glow"></div>
+
+                <div class="rsvp-time-content">
+                  <svg class="rsvp-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                    aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 6.5V12L15.5 14"></path>
+                  </svg>
+
+                  <div class="rsvp-time-text">
+                    <strong dir="ltr">16:00</strong>
+                    <span>مساءً</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <span class="rsvp-side-decoration">✦</span>
+
+            </div>
+
+            <p class="rsvp-time-footnote">
+              نرجو الحضور قبل الساعة الرابعة مساءً
+            </p>
+
+          </div>
+
+          <!-- Important information card -->
+          <div class="rsvp-info-card" data-rsvp-reveal>
+
+            <div class="rsvp-card-topline"></div>
+
+            <span class="rsvp-card-icon">✧</span>
+
+            <p>
+              حرصاً منا على تنظيم الحفل واحترام مواعيده،
+              نرجو من ضيوفنا الكرام الحضور
+              <strong>قبل الساعة الرابعة مساءً.</strong>
+            </p>
+
+          </div>
+
+          <!-- Special loving warning -->
+          <div class="rsvp-warning-card" data-rsvp-reveal>
+
+            <div class="rsvp-warning-heading">
+              <span class="rsvp-warning-decor">✦</span>
+              <h3>تنبيه بكل محبة</h3>
+              <span class="rsvp-warning-decor">✦</span>
+            </div>
+
+            <div class="rsvp-warning-divider"></div>
+
+            <p>
+              ستبدأ مراسم الزفاف ودخول العروس
+              <strong>في الموعد المحدد دون تأخير،</strong>
+              لذا نلتمس منكم تفهّم ذلك والحرص على عدم التأخر،
+              حتى لا تفوتكم أجمل لحظات فرحتنا.
+            </p>
+
+            <div class="rsvp-warning-bottom">♡</div>
+
+          </div>
+
+          <!-- Closing statement -->
+          <div class="rsvp-closing" data-rsvp-reveal>
+
+            <span class="closing-heart">♡</span>
+
+            <p>
+              حضوركم في الموعد
+              <span>أجمل هدية لنا</span>
+            </p>
+
+            <span class="closing-heart">♡</span>
+
+          </div>
+
+          <div class="rsvp-bottom-ornament" data-rsvp-reveal>
+            <span></span>
+            <b>❦</b>
+            <span></span>
+          </div>
 
         </div>
-
       </section>
 
     </main>
@@ -1893,4 +1505,5 @@
   </div>
 
 </body>
+
 </html>
